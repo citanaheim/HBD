@@ -72,7 +72,7 @@ document.getElementById("YupBtn").addEventListener("click", function () {
                 document.getElementById("cakeImage").src = "images/cake_blown.png";
 
                 const bdayMessage = document.getElementById("birthdayMessage");
-                bdayMessage.innerHTML = `hbd ule, ${nickname}! humayo ka't magparami. tc always :>`;
+                bdayMessage.innerHTML = `hbd ule pre, ${nickname}! tc always yey :>`;
 
                 confetti({
                     particleCount: 200,
@@ -92,5 +92,5 @@ document.getElementById("YupBtn").addEventListener("click", function () {
   });
   
 document.getElementById("NopeBtn").addEventListener("click", function () {
-    alert("Ok lang yan, advance or belated na lang 😄");
+    alert("Layas ka here :)");
 });
