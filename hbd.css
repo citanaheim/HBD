@@ -1,183 +1,127 @@
-/* Ensure the body fills the whole screen */
 body {
   margin: 0;
   padding: 0;
-  height: 100vh; /* Full height of the viewport */
+  height: 100vh;
   font-family: 'Press Start 2P', cursive;
   display: flex;
-  justify-content: center; /* Center the container horizontally */
-  align-items: center; /* Center the container vertically */
-  background-color: #d9ab80; /* Light gray background */
+  justify-content: center;
+  align-items: center;
+  background-color: #d9ab80;
   user-select: none;
   outline: none;
 }
 
-/* Container setup */
 #container {
-  background-image: url('cloudBG2.jpg');
+  background-image: url('images/cloudBG2.jpg');
   margin: 0;
   padding: 0;
-  background-size: cover; /* Ensure the image covers the container */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent repeating the image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   width: 80%;
-  height: 80vh; /* 50% of the viewport height */
-  flex-direction: column; /* Stack the content vertically */
-  justify-content: center; /* Center the content inside */
-  align-items: center; /* Center the content inside */
+  height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 0; /* No rounded corners */
   border: 2px solid #904b07;
-  user-select: none;
-  outline: none;
+  border-radius: 0;
 }
 
-/* Styling the heading */
 h1 {
-  font-size: 1.5em; /* Font size for the heading */
-  color: #74493e; /* Light pink color */
-  margin-bottom: 25px; /* Space below the heading */
+  font-size: 1.5em;
+  color: #74493e;
+  margin-bottom: 25px;
   text-align: center;
   width: 100%;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Buttons container setup */
 .buttons-container {
   display: flex;
   justify-content: center;
-  gap: 25px; /* Space between the buttons */
+  gap: 25px;
   padding: 20px;
-  border-radius: 0; /* No rounded corners */
 }
 
-/* Button styling */
 button {
   font-size: 18px;
   padding: 15px 30px;
-  background-color: #b28173; /* Soft peach-pink */
+  background-color: #b28173;
   color: #fff2e8;
-  border: 2px solid #904b07; /* Border color */
-  border-radius: 0; /* No rounded corners */
+  border: 2px solid #904b07;
+  border-radius: 0;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: 'Press Start 2P', cursive;
 }
 
-/* Hover effect on buttons */
 button:hover {
-  background-color: #904b07; /* Slightly darker peach-pink */
-  transform: translateY(-3px); /* Subtle animation effect */
-}
-
-button:focus {
-  outline: none;
+  background-color: #904b07;
+  transform: translateY(-3px);
 }
 
 button:active {
-  transform: translateY(1px); /* Slight active effect */
+  transform: translateY(1px);
 }
 
-
-
-
-
-
-
-
-/* Styling the nickname input */
 #nicknameInput {
   padding: 12px 16px;
   font-size: 12px;
-  border: 2px solid #74493e; /* Match the border color */
-  border-radius: 5px; /* Slightly rounded corners */
+  border: 2px solid #74493e;
+  border-radius: 5px;
   outline: none;
   margin-bottom: 20px;
-  width: 80%; /* Adjust width to fit the screen */
-  max-width: 300px; /* Prevent it from being too wide */
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  width: 80%;
+  max-width: 300px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   font-family: 'Press Start 2P', cursive;
-  background-color: #fff2e8; /* Light background color for input */
+  background-color: #fff2e8;
 }
 
-/* Styling the submit button */
 #submitName {
   padding: 12px 24px;
-  background-color: #b28173; /* Same as button color */
+  background-color: #b28173;
   color: #fff2e8;
   border: 2px solid #904b07;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 5px; /* Slightly rounded corners */
+  border-radius: 5px;
   font-family: 'Press Start 2P', cursive;
   transition: all 0.3s ease;
-  width: 80%; /* Match the width of the input */
+  width: 80%;
   max-width: 300px;
 }
 
 #submitName:hover {
-  background-color: #904b07; /* Darker shade on hover */
+  background-color: #904b07;
   transform: translateY(-2px);
-}
-
-#submitName:active {
-  transform: translateY(1px); /* Active effect */
-}
-
-/* Styling the paragraph text */
-p {
-  font-size: 1.2em; /* Slightly larger text */
-  color: #74493e; /* Match the color of the heading */
-  text-align: center; /* Center the text */
-  font-family: 'Press Start 2P', cursive; /* Use the same font */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Soft shadow for text */
-}
-
-
-
-
-@keyframes wiggle {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(3deg);
-  }
-  50% {
-    transform: rotate(-3deg);
-  }
-  75% {
-    transform: rotate(3deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
 }
 
 #birthdayMessage {
   animation: wiggle 4.5s ease-in-out infinite;
   color: #74493e;
   text-align: center;
-  
 }
 
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(3deg); }
+  50% { transform: rotate(-3deg); }
+  75% { transform: rotate(3deg); }
+  100% { transform: rotate(0deg); }
+}
 
-
-
-/* Styling for the cake image */
 #cakeImage {
-  width: 40vh; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 20px; /* Space between the cake and the heading */
+  width: 40vh;
+  height: auto;
+  margin-bottom: 20px;
 }
-
-
-
 
 #playYTSong {
-  background-color:#74493e;
+  background-color: #74493e;
   color:#fff2e8;
   border: none;
   padding: 10px 20px;
@@ -186,46 +130,14 @@ p {
   border-radius: 8px;
   font-family: 'Press Start 2P', cursive;
   margin-top: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #playYTSong:hover {
-  background-color:  #904b07;
+  background-color: #904b07;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Mobile responsive adjustments */
 @media (max-width: 600px) {
-  h1 {
-    font-size: .9em; /* Adjust font size on small screens */
-  }
-
-  button {
-    padding: 12px 24px; /* Adjust button size */
-    font-size: 16px; /* Adjust button font size */
-  }
-
-  .buttons-container {
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 20px; /* Increase gap between buttons */
-  }
-
-  p {
-    font-size: .2em; /* Adjust font size on small screens */
-  }
+  h1 { font-size: .9em; }
+  button { padding: 12px 24px; font-size: 16px; }
+  .buttons-container { flex-direction: column; gap: 20px; }
 }
-
